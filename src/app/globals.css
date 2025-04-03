@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .Button {
+    @apply border border-blue-primary bg-blue-primary text-white py-1 px-4;
+    transition: 0.1s;
+  }
+  .Button:hover {
+    @apply bg-blue-800 border-blue-800;
+  }
+  .Button:focus-visible {
+    outline-color: black;
+  }
+  .Button.Button--secondary {
+    @apply text-blue-primary;
+    background: transparent;
+  }
+  .Button.Button--secondary:hover {
+    @apply bg-blue-200;
+  }
+  .Button.Button--secondary:focus-visible {
+    outline-color: var(--outline-current);
+  }
+  .NavLink {
+    @apply px-6 py-2 flex text-gray-500;
+  }
+  .NavLink .Dot {
+    @apply bg-gray-500;
+  }
+  .NavLink:hover {
+    @apply bg-blue-100;
+  }
+  .NavLink:active {
+    @apply bg-blue-primary text-white;
+  }
+  .NavLink:active .Dot {
+    @apply bg-white;
+  }
+  .NavLink--selected {
+    @apply bg-blue-100 text-blue-primary;
+  }
+  .NavLink--selected .Dot {
+    @apply bg-blue-primary;
+  }
+  .NavLink.NavLink--red {
+    @apply text-red-500;
+  }
+  .NavLink.NavLink--red .Dot {
+    @apply bg-red-500;
+  }
+  .NavLink.NavLink--red.NavLink--selected {
+    @apply bg-red-100 text-red-500;
+  }
+  .NavLink.NavLink--red:hover {
+    @apply bg-red-100;
+  }
+  .NavLink.NavLink--red:active {
+    @apply bg-red-500 text-white;
+  }
+  .NavLink.NavLink--red:active .Dot {
+    @apply bg-white;
+  }
+  .NavLink.NavLink--red:focus-visible {
+    outline-color: var(--red-500);
+  }
+  .AgentToday table {
+    @apply border-spacing-x-0 border-spacing-y-[2px];
+  }
+  .MeetingButton:hover {
+    @apply bg-gray-50;
+  }
+  .MeetingButton:active {
+    @apply bg-gray-100;
+  }
+  .MeetingButton .flex-auto {
+    flex: none;
+  }
+}
