@@ -5,9 +5,9 @@ import classNames from 'classnames'
 import React, { ReactNode, useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
+import { Value } from 'react-calendar/dist/esm/shared/types.js'
 import './react-calendar-overrides.css'
 import { CSSRuleObject } from 'tailwindcss/types/config'
-// import { table } from "console";
 
 type DynamicTag = React.ComponentType | keyof React.JSX.IntrinsicElements
 
@@ -476,7 +476,7 @@ const InsightsData: React.FC<InsightsDataProps> = ({
 )
 
 export default function Home() {
-  const [value, onChange] = useState(new Date())
+  const [value, onChange] = useState<Value>(new Date())
   const [context, setContext] = useState({
     data: [],
     updateData: (changedData: ContextObj) => {},
@@ -584,6 +584,7 @@ export default function Home() {
             <Panel
               tag="button"
               className="flex flex-row items-center MeetingButton StartMeetingButton"
+              onClick={() => alert('Start meeting')}
             >
               <IconText
                 className="flex-1 ml-12"
@@ -596,6 +597,7 @@ export default function Home() {
             <Panel
               tag="button"
               className="flex flex-row items-center items-stretch MeetingButton JoinMeetingButton"
+              onClick={() => alert('Join meeting')}
             >
               <IconText
                 className="flex-1 ml-12"
@@ -608,6 +610,7 @@ export default function Home() {
             <Panel
               tag="button"
               className="flex flex-row items-center MeetingButton ScheduleMeetingButton"
+              onClick={() => alert('Schedule meeting')}
             >
               <IconText
                 className="flex-1 ml-12"
@@ -621,9 +624,16 @@ export default function Home() {
           <Panel className="Calendar" style={{ gridArea: 'd' }}>
             <h1 className="text-lg font-bold">Calendar</h1>
             <Calendar
+              view="month"
+              showFixedNumberOfWeeks={true}
+              onViewChange={(e) => {
+                // e.stopPropagation()
+                console.log(e)
+              }}
               onChange={(value) => {
                 if (value) {
                   onChange(value)
+                  alert(value)
                 }
               }}
               value={value}

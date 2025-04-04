@@ -1,3 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .react-calendar {
-    border: 0;
+  border: 0;
+}
+.react-calendar__tile {
+  font-size: 0.875rem;
+}
+.react-calendar__month-view__days__day--weekend {
+  @apply text-red-600;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  @apply text-gray-400;
+}
+.react-calendar__tile--now,
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  @apply bg-yellow-300 text-black;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  @apply bg-gray-100;
+}
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  @apply bg-blue-primary text-white;
+}
+.react-calendar abbr:where([title]) {
+  text-decoration: none;
 }
