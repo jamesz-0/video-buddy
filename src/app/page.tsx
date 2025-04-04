@@ -2,12 +2,11 @@
 
 import Image from 'next/image'
 import classNames from 'classnames'
-import React, { ReactNode, useState } from 'react'
+import React, { useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import { Value } from 'react-calendar/dist/esm/shared/types.js'
 import './react-calendar-overrides.css'
-import { CSSRuleObject } from 'tailwindcss/types/config'
 
 type DynamicTag = React.ComponentType | keyof React.JSX.IntrinsicElements
 
@@ -25,10 +24,6 @@ interface PropsWithClassName {
 
 interface PropsWithChildren {
   children?: React.ReactNode
-}
-
-interface PropsWithInlineStyle {
-  style?: React.CSSProperties
 }
 
 interface InvitationMeetingItem {
@@ -66,6 +61,7 @@ const sampleInvitationsData: InvitationsDataObj = {
   ],
   onRSVP: (e: EventObj, meetingItem: InvitationMeetingItem) => {
     alert('rsvp')
+    console.log(e, meetingItem)
   },
 }
 
@@ -114,9 +110,11 @@ const sampleAgendaTodayData: AgendaTodayDataType = {
   ],
   onReschedule: (e, meetingItem) => {
     alert('reschedule')
+    console.log('reschedule', e, meetingItem)
   },
   onChangeAttendance: (e, meetingItem) => {
     alert('change attendance')
+    console.log('change attendance', e, meetingItem)
   },
 }
 
@@ -131,7 +129,7 @@ const sampleInsightsData: InsightsDataObj = {
 }
 
 interface ContextObj {
-  data: Object
+  data: object
   updateData: UpdateDataFunction
 }
 
@@ -139,9 +137,9 @@ interface UpdateDataFunction {
   (changedData: ContextObj): void
 }
 
-export const Context = React.createContext<ContextObj>({
+const Context = React.createContext<ContextObj>({
   data: [],
-  updateData: (changedData: ContextObj) => {},
+  updateData: () => {},
 })
 
 interface ContextProviderProps extends PropsWithChildren {
@@ -252,11 +250,10 @@ const IconText: React.FC<IconTextProps> = ({
   </div>
 )
 
-interface DotProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {}
+type DotProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>
 
 /**
  * Dot expects bg-color and size to be passed through className.
@@ -477,9 +474,9 @@ const InsightsData: React.FC<InsightsDataProps> = ({
 
 export default function Home() {
   const [value, onChange] = useState<Value>(new Date())
-  const [context, setContext] = useState({
+  const [context] = useState({
     data: [],
-    updateData: (changedData: ContextObj) => {},
+    updateData: () => {},
   })
 
   return (
