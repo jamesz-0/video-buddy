@@ -10,6 +10,7 @@ import {
 import { Panel, PanelProps } from 'app/components/Panel'
 import { IconText } from 'app/components/IconText'
 import { Dot } from 'app/components/Dot'
+import './NavPanel.css'
 
 export interface NavigationItem {
   id: string
@@ -44,13 +45,13 @@ export const NavPanel: React.FC<NavPanelProps> = ({
           <a
             key={item.id}
             className={classNames(
-              'NavLink',
-              item.isSelected ? 'NavLink--selected' : ''
+              'Nav-link',
+              item.isSelected ? 'Nav-link--selected' : ''
             )}
             aria-current="page"
             href={item.url}
           >
-            <li className="NavItem">
+            <li className="Nav-item">
               <IconText
                 className="flex-1"
                 renderIcon={item.icon}
@@ -62,9 +63,10 @@ export const NavPanel: React.FC<NavPanelProps> = ({
       </ul>
       {navigationContent.bottomNavItems.map((item) => (
         <a
+          key={item.id}
           className={classNames(
-            'NavLink',
-            item.isRed ? 'NavLink--red' : '',
+            'Nav-link',
+            item.isRed ? 'Nav-link--red' : '',
             'mb-4'
           )}
           href="#"

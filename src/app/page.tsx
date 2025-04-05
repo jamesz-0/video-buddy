@@ -17,11 +17,6 @@ import {
 } from 'app/utils'
 import { Panel } from 'app/components/Panel'
 import {
-  InvitationMeetingItem,
-  InvitationsDataObj,
-  InvitationsList,
-} from 'app/components/InvitationList'
-import {
   AgendaTodayMeetingObj,
   onRescheduleFunction,
   onChangeAttendanceFunction,
@@ -29,6 +24,10 @@ import {
   AgendaTodayTableProps,
   AgendaTodayTable,
 } from 'app/components/AgendaToday'
+import {
+  InvitationMeetingItem,
+  InvitationsDataObj,
+} from 'app/components/InvitationsList'
 import { InsightsDataObj, InsightsData } from 'app/components/Insights'
 import { HeaderProps, Header } from 'app/components/Header'
 import { MainProps, Main } from 'app/components/Main'
@@ -39,8 +38,12 @@ import {
   ImageWithPlaceholderProps,
   ImageWithPlaceholder,
 } from 'app/components/ImageWithPlaceholder'
-import { NavPanel } from './components/NavPanel'
-import { AgendaTodayPanel } from './components/AgendaTodayPanel'
+import { NavPanel } from 'app/components/NavPanel'
+import { AgendaTodayPanel } from 'app/components/AgendaTodayPanel'
+import { MeetingPanelButtonsArea } from 'app/components/MeetingPanelButtonsArea'
+import { CalendarPanel } from 'app/components/CalendarPanel'
+import { InvitationsPanel } from 'app/components/InvitationsPanel'
+import { InsightsPanel } from 'app/components/InsightsPanel'
 
 const sampleInvitationsData: InvitationsDataObj = {
   content: [
@@ -155,7 +158,7 @@ const navigationContent = {
 }
 
 export default function App() {
-  const [value, onChange] = useState<Value>(new Date())
+  const [value, setValue] = useState<Value>(new Date())
   const [context] = useState({
     data: [],
     updateData: () => {},
@@ -164,14 +167,7 @@ export default function App() {
   return (
     <ContextProvider dataObj={context}>
       <div className="flex flex-col min-h-screen">
-        <Header className="flex-none">
-          <div className="LogoContainer">
-            <Dot className="bg-white size-[32px]" />
-          </div>
-          <div className="TitleContainer text-white flex font-bold text-xl">
-            Video Buddy
-          </div>
-        </Header>
+        <Header className="flex-none" />
         <Main
           className="flex-1"
           style={{
@@ -188,76 +184,20 @@ export default function App() {
             style={{ gridArea: 'b' }}
             agendaTodayData={sampleAgendaTodayData}
           />
-          <div
-            style={{ gridArea: 'c' }}
-            className="grid grid-rows-[1fr_1fr_1fr] gap-4"
-          >
-            <Panel
-              tag="button"
-              className="flex flex-row items-center MeetingPanelButton StartMeetingButton"
-              onClick={() => alert('Start meeting')}
-            >
-              <IconText
-                className="flex-1 ml-12"
-                renderIcon={<Dot className="bg-blue-primary size-[32px]" />}
-                renderText={
-                  <h1 className="text-lg font-bold">Start a meeting</h1>
-                }
-              />
-            </Panel>
-            <Panel
-              tag="button"
-              className="flex flex-row items-center items-stretch MeetingPanelButton JoinMeetingButton"
-              onClick={() => alert('Join meeting')}
-            >
-              <IconText
-                className="flex-1 ml-12"
-                renderIcon={<Dot className="bg-blue-primary size-[32px]" />}
-                renderText={
-                  <h1 className="text-lg font-bold">Join a meeting</h1>
-                }
-              />
-            </Panel>
-            <Panel
-              tag="button"
-              className="flex flex-row items-center MeetingPanelButton ScheduleMeetingButton"
-              onClick={() => alert('Schedule meeting')}
-            >
-              <IconText
-                className="flex-1 ml-12"
-                renderIcon={<Dot className="bg-blue-primary size-[32px]" />}
-                renderText={
-                  <h1 className="text-lg font-bold">Schedule a meeting</h1>
-                }
-              />
-            </Panel>
-          </div>
-          <Panel className="Calendar" style={{ gridArea: 'd' }}>
-            <h1 className="text-lg font-bold">Calendar</h1>
-            <Calendar
-              onViewChange={(e) => {
-                console.log(e)
-              }}
-              onChange={(value) => {
-                if (value) {
-                  onChange(value)
-                  alert(value)
-                }
-              }}
-              value={value}
-            />
-          </Panel>
-          <Panel className="Invitations" style={{ gridArea: 'e' }}>
-            <h1 className="text-lg font-bold">Invitations</h1>
-            <InvitationsList invitationsData={sampleInvitationsData} />
-          </Panel>
-          <Panel className="Insights flex flex-col" style={{ gridArea: 'f' }}>
-            <h1 className="text-lg font-bold mb-2">Insights</h1>
-            <InsightsData
-              className="flex-grow flex flex-col justify-center"
-              insightsData={sampleInsightsData}
-            />
-          </Panel>
+          <MeetingPanelButtonsArea style={{ gridArea: 'c' }} />
+          <CalendarPanel
+            style={{ gridArea: 'd' }}
+            value={value}
+            setValue={setValue}
+          />
+          <InvitationsPanel
+            invitationsData={sampleInvitationsData}
+            style={{ gridArea: 'e' }}
+          />
+          <InsightsPanel
+            insightsData={sampleInsightsData}
+            style={{ gridArea: 'f' }}
+          />
         </Main>
       </div>
     </ContextProvider>

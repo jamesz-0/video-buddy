@@ -1,6 +1,12 @@
 import { RenderProp } from 'app/utils'
 import { IconText } from 'app/components/IconText'
 
+export interface InvitationMeetingItem {
+  id: string
+  name: string
+  meetingName: string
+}
+
 export interface InvitationAlertItemProps {
   renderAvatar: RenderProp
   renderText: RenderProp

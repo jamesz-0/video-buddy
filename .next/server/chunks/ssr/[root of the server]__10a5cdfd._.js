@@ -724,10 +724,10 @@ const NavPanel = ({ className, navigationContent, ...props })=>{
                         renderText: item.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/NavPanel/NavPanel.tsx",
-                        lineNumber: 72,
+                        lineNumber: 73,
                         columnNumber: 11
                     }, this)
-                }, void 0, false, {
+                }, item.id, false, {
                     fileName: "[project]/src/app/components/NavPanel/NavPanel.tsx",
                     lineNumber: 64,
                     columnNumber: 9

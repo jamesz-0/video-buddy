@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import { PropsWithChildren } from 'app/utils'
+import { Dot } from 'app/components/Dot'
 
 export interface HeaderProps
   extends React.DetailedHTMLProps<
@@ -8,15 +9,16 @@ export interface HeaderProps
     >,
     PropsWithChildren {}
 
-export const Header: React.FC<HeaderProps> = ({
-  className,
-  children,
-  ...props
-}) => (
+export const Header: React.FC<HeaderProps> = ({ className, ...props }) => (
   <div
     className={`Header bg-blue-primary flex items-center gap-4 p-6 ${classNames(className)}`}
     {...props}
   >
-    {children}
+    <div className="Header-logoContainer">
+      <Dot className="bg-white size-[32px]" />
+    </div>
+    <div className="Header-titleContainer text-white flex font-bold text-xl">
+      Video Buddy
+    </div>
   </div>
 )

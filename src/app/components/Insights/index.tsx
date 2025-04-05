@@ -1,1 +1,1 @@
-export * from './Insights'
+export * from './InsightsData'
