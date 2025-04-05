@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/video-buddy",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/video-buddy/",
-      "destination": "/video-buddy",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/video-buddy/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -59,15 +51,5 @@
     "pathHeader": "x-nextjs-rewritten-path",
     "queryHeader": "x-nextjs-rewritten-query"
   },
-  "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/video-buddy//_next/:path+",
-        "destination": "/video-buddy/_next/:path+",
-        "regex": "^/video-buddy//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
-    "afterFiles": [],
-    "fallback": []
-  }
+  "rewrites": []
 }

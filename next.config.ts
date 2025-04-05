@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -8,9 +8,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/video-buddy/' : '',
-  basePath: isProd ? '/video-buddy' : '',
-  output: 'export'
-};
+  assetPrefix: isProd ? '' : '',
+  basePath: isProd ? '' : '',
+  output: 'export',
+  trailingSlash: false,
+}
 
-export default nextConfig;
+export default nextConfig
