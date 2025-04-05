@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/components/generic/Button/Button.css"],"sourcesContent":["\n\n.Button {\n  border-width: 1px;\n  --tw-border-opacity: 1;\n  border-color: rgb(51 89 247 / var(--tw-border-opacity, 1));\n  --tw-bg-opacity: 1;\n  background-color: rgb(51 89 247 / var(--tw-bg-opacity, 1));\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  --tw-text-opacity: 1;\n  color: rgb(255 255 255 / var(--tw-text-opacity, 1));\n  transition: 0.1s;\n}\n.Button:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(30 64 175 / var(--tw-border-opacity, 1));\n  --tw-bg-opacity: 1;\n  background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));\n}\n.Button:focus-visible {\n  outline-color: black;\n}\n.Button.Button--secondary {\n  --tw-text-opacity: 1;\n  color: rgb(51 89 247 / var(--tw-text-opacity, 1));\n  background: transparent;\n}\n.Button.Button--secondary:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));\n}\n.Button.Button--secondary:focus-visible {\n  outline-color: var(--outline-current);\n}\n"],"names":[],"mappings":"AAEA;;;;;;;;;;;;;;;AAcA;;;;;;;AAMA;;;;AAGA;;;;;;AAKA;;;;;AAIA"}}]
-}

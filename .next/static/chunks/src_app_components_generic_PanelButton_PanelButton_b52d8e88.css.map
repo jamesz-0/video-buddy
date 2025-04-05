@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/components/generic/PanelButton/PanelButton.css"],"sourcesContent":["\n\n.PanelButton:hover {\n    --tw-bg-opacity: 1;\n    background-color: rgb(250 250 252 / var(--tw-bg-opacity, 1))\n}\n.PanelButton:active {\n    --tw-bg-opacity: 1;\n    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))\n}\n"],"names":[],"mappings":"AAEA;;;;;AAIA"}}]
-}
