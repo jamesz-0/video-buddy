@@ -767,13 +767,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 ;
+;
 const PanelButton = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$generic$2f$Panel$2f$Panel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Panel"], {
         tag: "button",
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])('PanelButton', className),
         ...props
     }, void 0, false, {
         fileName: "[project]/src/app/components/generic/PanelButton/PanelButton.tsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 3
     }, this);
 _c = PanelButton;
@@ -825,6 +826,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 ;
+;
 const MeetingPanelButtonsArea = ({ className, ...props })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])('grid', 'grid-rows-[1fr_1fr_1fr]', 'gap-4', className),
@@ -839,7 +841,7 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         className: "bg-blue-primary size-[32px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 23
                     }, void 0),
                     renderText: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -847,17 +849,17 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         children: "Start a meeting"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 44,
+                        lineNumber: 45,
                         columnNumber: 23
                     }, void 0)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$generic$2f$PanelButton$2f$PanelButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelButton"], {
@@ -869,7 +871,7 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         className: "bg-blue-primary size-[32px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 23
                     }, void 0),
                     renderText: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -877,17 +879,17 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         children: "Join a meeting"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 23
                     }, void 0)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                lineNumber: 47,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$generic$2f$PanelButton$2f$PanelButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelButton"], {
@@ -899,7 +901,7 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         className: "bg-blue-primary size-[32px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 63,
+                        lineNumber: 64,
                         columnNumber: 23
                     }, void 0),
                     renderText: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -907,23 +909,23 @@ const MeetingPanelButtonsArea = ({ className, ...props })=>{
                         children: "Schedule a meeting"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 23
                     }, void 0)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                    lineNumber: 61,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/specific/MeetingPanelButtonsArea/MeetingPanelButtonsArea.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 };
@@ -973,6 +975,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$cal
 ;
 ;
 const Calendar = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$calendar$2f$dist$2f$esm$2f$Calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+        className: "Calendar",
         view: "month",
         showFixedNumberOfWeeks: true,
         ...props

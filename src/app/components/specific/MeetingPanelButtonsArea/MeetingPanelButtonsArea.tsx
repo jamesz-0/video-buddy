@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { PanelButton } from 'app/components/generic/PanelButton'
 import { IconText } from 'app/components/generic/IconText'
 import { Dot } from 'app/components/generic/Dot'
+import './MeetingPanelButtonsArea.css'
 
 export interface NavigationItem {
   id: string

@@ -14,5 +14,10 @@ import './Calendar.css'
 export type CalendarProps = ReactCalendarProps
 
 export const Calendar = ({ ...props }: CalendarProps) => (
-  <ReactCalendar view="month" showFixedNumberOfWeeks={true} {...props} />
+  <ReactCalendar
+    className="Calendar"
+    view="month"
+    showFixedNumberOfWeeks={true}
+    {...props}
+  />
 )

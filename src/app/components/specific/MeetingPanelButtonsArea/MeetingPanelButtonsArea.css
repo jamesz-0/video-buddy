@@ -1,0 +1,5 @@
+@tailwind components;
+
+.MeetingPanelButton .IconText-text.flex-auto {
+  flex: none;
+}

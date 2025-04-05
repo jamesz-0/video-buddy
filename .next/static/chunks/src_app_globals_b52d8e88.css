@@ -301,20 +301,6 @@ img, video {
   display: none;
 }
 
-.MeetingPanelButton:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 252 / var(--tw-bg-opacity, 1));
-}
-
-.MeetingPanelButton:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.MeetingPanelButton .flex-auto {
-  flex: none;
-}
-
 .mb-2 {
   margin-bottom: .5rem;
 }

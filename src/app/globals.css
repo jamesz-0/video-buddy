@@ -19,18 +19,3 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-@layer components {
-  .AgentToday table {
-    @apply border-spacing-x-0 border-spacing-y-[2px];
-  }
-  .MeetingPanelButton:hover {
-    @apply bg-gray-50;
-  }
-  .MeetingPanelButton:active {
-    @apply bg-gray-100;
-  }
-  .MeetingPanelButton .flex-auto {
-    flex: none;
-  }
-}
