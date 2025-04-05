@@ -301,31 +301,6 @@ img, video {
   display: none;
 }
 
-.NavLink .Dot {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
-}
-
-.NavLink:active .Dot {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.NavLink--selected .Dot {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 89 247 / var(--tw-bg-opacity, 1));
-}
-
-.NavLink.NavLink--red .Dot {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
-}
-
-.NavLink.NavLink--red:active .Dot {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .AgentToday table {
   --tw-border-spacing-x: 0px;
   --tw-border-spacing-y: 2px;

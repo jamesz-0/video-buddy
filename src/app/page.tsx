@@ -1,49 +1,24 @@
 'use client'
 
 import React, { useState } from 'react'
-import classNames from 'classnames'
-import { Calendar, Value } from 'app/components/Calendar'
-import {
-  ContextObj,
-  UpdateDataFunction,
-  ContextProviderProps,
-  ContextProvider,
-} from 'app/components/ContextProvider'
-import {
-  PropsWithChildren,
-  PropsWithClassName,
-  EventObj,
-  RenderProp,
-} from 'app/utils'
-import { Panel } from 'app/components/Panel'
-import {
-  AgendaTodayMeetingObj,
-  onRescheduleFunction,
-  onChangeAttendanceFunction,
-  AgendaTodayDataType,
-  AgendaTodayTableProps,
-  AgendaTodayTable,
-} from 'app/components/AgendaToday'
+import { Value } from 'app/components/generic/Calendar'
+import { ContextProvider } from 'app/components/generic/ContextProvider'
+import { EventObj } from 'app/utils'
+import { AgendaTodayDataType } from 'app/components/specific/AgendaToday'
 import {
   InvitationMeetingItem,
   InvitationsDataObj,
-} from 'app/components/InvitationsList'
-import { InsightsDataObj, InsightsData } from 'app/components/Insights'
-import { HeaderProps, Header } from 'app/components/Header'
-import { MainProps, Main } from 'app/components/Main'
-import { IconTextProps, IconText } from 'app/components/IconText'
-import { DotProps, Dot } from 'app/components/Dot'
-import { ButtonProps, Button } from 'app/components/Button'
-import {
-  ImageWithPlaceholderProps,
-  ImageWithPlaceholder,
-} from 'app/components/ImageWithPlaceholder'
-import { NavPanel } from 'app/components/NavPanel'
-import { AgendaTodayPanel } from 'app/components/AgendaTodayPanel'
-import { MeetingPanelButtonsArea } from 'app/components/MeetingPanelButtonsArea'
-import { CalendarPanel } from 'app/components/CalendarPanel'
-import { InvitationsPanel } from 'app/components/InvitationsPanel'
-import { InsightsPanel } from 'app/components/InsightsPanel'
+} from 'app/components/specific/Invitations/InvitationsList'
+import { InsightsDataObj } from 'app/components/specific/Insights/InsightsData'
+import { Header } from 'app/components/specific/Header'
+import { Main } from 'app/components/specific/Main'
+import { Dot } from 'app/components/generic/Dot'
+import { NavPanel } from 'app/components/specific/NavPanel'
+import { AgendaTodayPanel } from 'app/components/specific/AgendaToday/AgendaTodayPanel'
+import { MeetingPanelButtonsArea } from 'app/components/specific/MeetingPanelButtonsArea'
+import { CalendarPanel } from 'app/components/specific/CalendarPanel'
+import { InvitationsPanel } from 'app/components/specific/Invitations/InvitationsPanel'
+import { InsightsPanel } from 'app/components/specific/Insights/InsightsPanel'
 
 const sampleInvitationsData: InvitationsDataObj = {
   content: [

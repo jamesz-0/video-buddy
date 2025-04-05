@@ -21,48 +21,6 @@ body {
 }
 
 @layer components {
-  .NavLink {
-    @apply px-6 py-2 flex text-gray-500;
-  }
-  .NavLink .Dot {
-    @apply bg-gray-500;
-  }
-  .NavLink:hover {
-    @apply bg-blue-100;
-  }
-  .NavLink:active {
-    @apply bg-blue-primary text-white;
-  }
-  .NavLink:active .Dot {
-    @apply bg-white;
-  }
-  .NavLink--selected {
-    @apply bg-blue-100 text-blue-primary;
-  }
-  .NavLink--selected .Dot {
-    @apply bg-blue-primary;
-  }
-  .NavLink.NavLink--red {
-    @apply text-red-500;
-  }
-  .NavLink.NavLink--red .Dot {
-    @apply bg-red-500;
-  }
-  .NavLink.NavLink--red.NavLink--selected {
-    @apply bg-red-100 text-red-500;
-  }
-  .NavLink.NavLink--red:hover {
-    @apply bg-red-100;
-  }
-  .NavLink.NavLink--red:active {
-    @apply bg-red-500 text-white;
-  }
-  .NavLink.NavLink--red:active .Dot {
-    @apply bg-white;
-  }
-  .NavLink.NavLink--red:focus-visible {
-    outline-color: var(--red-500);
-  }
   .AgentToday table {
     @apply border-spacing-x-0 border-spacing-y-[2px];
   }
