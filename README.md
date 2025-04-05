@@ -1,4 +1,4 @@
-## Presenting
+## Demo
 
 Live Demo: https://video-buddy-tan.vercel.app/
 
