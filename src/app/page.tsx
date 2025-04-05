@@ -15,7 +15,7 @@ import { Main } from 'app/components/specific/Main'
 import { Dot } from 'app/components/generic/Dot'
 import { NavPanel } from 'app/components/specific/NavPanel'
 import { AgendaTodayPanel } from 'app/components/specific/AgendaToday/AgendaTodayPanel'
-import { MeetingPanelButtonsArea } from 'app/components/specific/MeetingPanelButtonsArea'
+import { MeetingPanelButtons } from 'app/components/specific/MeetingPanelButtons'
 import { CalendarPanel } from 'app/components/specific/CalendarPanel'
 import { InvitationsPanel } from 'app/components/specific/Invitations/InvitationsPanel'
 import { InsightsPanel } from 'app/components/specific/Insights/InsightsPanel'
@@ -159,7 +159,7 @@ export default function App() {
             style={{ gridArea: 'b' }}
             agendaTodayData={sampleAgendaTodayData}
           />
-          <MeetingPanelButtonsArea style={{ gridArea: 'c' }} />
+          <MeetingPanelButtons style={{ gridArea: 'c' }} />
           <CalendarPanel
             style={{ gridArea: 'd' }}
             value={value}

@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { PanelButton } from 'app/components/generic/PanelButton'
 import { IconText } from 'app/components/generic/IconText'
 import { Dot } from 'app/components/generic/Dot'
-import './MeetingPanelButtonsArea.css'
+import './MeetingPanelButtons.css'
 
 export interface NavigationItem {
   id: string
@@ -16,12 +16,12 @@ export interface NavigationItem {
   isRed?: boolean
 }
 
-export type MeetingPanelButtonsArea = React.DetailedHTMLProps<
+export type MeetingPanelButtons = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 >
 
-export const MeetingPanelButtonsArea: React.FC<MeetingPanelButtonsArea> = ({
+export const MeetingPanelButtons: React.FC<MeetingPanelButtons> = ({
   className,
   ...props
 }) => {
