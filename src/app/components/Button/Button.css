@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Button {
+    @apply border border-blue-primary bg-blue-primary text-white py-1 px-4;
+    transition: 0.1s;
+  }
+  .Button:hover {
+    @apply bg-blue-800 border-blue-800;
+  }
+  .Button:focus-visible {
+    outline-color: black;
+  }
+  .Button.Button--secondary {
+    @apply text-blue-primary;
+    background: transparent;
+  }
+  .Button.Button--secondary:hover {
+    @apply bg-blue-200;
+  }
+  .Button.Button--secondary:focus-visible {
+    outline-color: var(--outline-current);
+  }
+}

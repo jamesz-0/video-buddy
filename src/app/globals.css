@@ -21,26 +21,6 @@ body {
 }
 
 @layer components {
-  .Button {
-    @apply border border-blue-primary bg-blue-primary text-white py-1 px-4;
-    transition: 0.1s;
-  }
-  .Button:hover {
-    @apply bg-blue-800 border-blue-800;
-  }
-  .Button:focus-visible {
-    outline-color: black;
-  }
-  .Button.Button--secondary {
-    @apply text-blue-primary;
-    background: transparent;
-  }
-  .Button.Button--secondary:hover {
-    @apply bg-blue-200;
-  }
-  .Button.Button--secondary:focus-visible {
-    outline-color: var(--outline-current);
-  }
   .NavLink {
     @apply px-6 py-2 flex text-gray-500;
   }
@@ -86,13 +66,13 @@ body {
   .AgentToday table {
     @apply border-spacing-x-0 border-spacing-y-[2px];
   }
-  .MeetingButton:hover {
+  .MeetingPanelButton:hover {
     @apply bg-gray-50;
   }
-  .MeetingButton:active {
+  .MeetingPanelButton:active {
     @apply bg-gray-100;
   }
-  .MeetingButton .flex-auto {
+  .MeetingPanelButton .flex-auto {
     flex: none;
   }
 }
