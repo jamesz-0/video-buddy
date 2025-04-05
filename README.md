@@ -1,6 +1,7 @@
-## Live Demo
+## Presenting
 
-https://video-buddy-tan.vercel.app/
+Live Demo: https://video-buddy-tan.vercel.app/
+Design: https://github.com/jamesz-0/video-buddy/blob/main/design-mockup.jpeg
 
 ## Next Bootstrap
 
