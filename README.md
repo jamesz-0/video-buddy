@@ -1,6 +1,6 @@
 ## Live Demo
 
-https://video-buddy-tan.vercel.app/#
+https://video-buddy-tan.vercel.app/
 
 ## Next Bootstrap
 
