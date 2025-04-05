@@ -1,1 +1,2 @@
-export * from './AgendaToday'
+export * from './AgendaTodayTable'
+export * from './AgendaTodayPanel'

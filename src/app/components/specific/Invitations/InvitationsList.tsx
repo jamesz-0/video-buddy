@@ -1,39 +1,25 @@
 import classNames from 'classnames'
-import { EventObj, PropsWithClassName } from 'app/utils'
+import { PropsWithClassName } from 'app/utils'
 import { ImageWithPlaceholder } from 'app/components/generic/ImageWithPlaceholder'
 import { Button } from 'app/components/generic/Button'
-import { InvitationAlertItem } from 'app/components/specific/Invitations/InvitationMeetingItem'
-
-export interface InvitationMeetingItem {
-  id: string
-  name: string
-  meetingName: string
-}
-
-export interface onRSVPFunction {
-  (e: EventObj, meetingItem: InvitationMeetingItem): void
-}
-
-export interface InvitationsDataObj {
-  content: Array<InvitationMeetingItem>
-  onRSVP: onRSVPFunction
-}
+import { InvitationsAlertItem } from 'app/components/specific/Invitations/InvitationsAlertItem'
+import { InvitationsDataObj } from './types'
 
 export interface InvitationsListProps extends PropsWithClassName {
   invitationsData: InvitationsDataObj
 }
 
 /**
-   * @param invitationsData expects to be in this
-   * [{
-        id: String,
-        name: String,
-        meetingName: String,
-        onRSVP: Event Function
-      }]
-   * }
-   * @returns List of meeting data
-   */
+ * @param invitationsData expects to be in this
+ * [{
+    id: String,
+    name: String,
+    meetingName: String,
+    onRSVP: Event Function
+  }]
+ * }
+ * @returns List of meeting data
+ **/
 export const InvitationsList: React.FC<InvitationsListProps> = ({
   className,
   invitationsData,
@@ -42,7 +28,7 @@ export const InvitationsList: React.FC<InvitationsListProps> = ({
     className={`${classNames('InvitationsList', 'flex', 'flex-col', 'gap-4', 'py-20', className)}`}
   >
     {invitationsData.content.map((item) => (
-      <InvitationAlertItem
+      <InvitationsAlertItem
         key={item.id}
         renderAvatar={
           <ImageWithPlaceholder

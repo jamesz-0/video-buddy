@@ -8,8 +8,8 @@ import { AgendaTodayDataType } from 'app/components/specific/AgendaToday'
 import {
   InvitationMeetingItem,
   InvitationsDataObj,
-} from 'app/components/specific/Invitations/InvitationsList'
-import { InsightsDataObj } from 'app/components/specific/Insights/InsightsData'
+} from 'app/components/specific/Invitations'
+import { InsightsDataObj } from 'app/components/specific/Insights'
 import { Header } from 'app/components/specific/Header'
 import { Main } from 'app/components/specific/Main'
 import { Dot } from 'app/components/generic/Dot'

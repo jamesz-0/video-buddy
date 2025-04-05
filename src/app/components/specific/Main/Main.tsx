@@ -14,7 +14,14 @@ export const Main: React.FC<MainProps> = ({
   ...props
 }) => (
   <div
-    className={`Main bg-gray-50 grid gap-4 p-4 ${classNames(className)}`}
+    className={classNames(
+      'Main',
+      'bg-gray-50',
+      'grid',
+      'gap-4',
+      'p-4',
+      className
+    )}
     {...props}
   >
     {children}

@@ -1,3 +1,8 @@
+/**
+ * This whole thing is just a react calendar but with react prop and style overrides.
+ * The Calendar component is meant to be this app's reusable calendar component.
+ */
+
 import {
   Calendar as ReactCalendar,
   CalendarProps as ReactCalendarProps,

@@ -14,7 +14,13 @@ export const IconText: React.FC<IconTextProps> = ({
   ...props
 }) => (
   <div
-    className={`IconText flex flex-row items-center ${classNames(className)}`}
+    className={classNames(
+      'IconText',
+      'flex',
+      'flex-row',
+      'items-center',
+      className
+    )}
     {...props}
   >
     <div className="IconText-icon flex-shrink flex items-center mr-4 align-middle">

@@ -11,7 +11,15 @@ export interface HeaderProps
 
 export const Header: React.FC<HeaderProps> = ({ className, ...props }) => (
   <div
-    className={`Header bg-blue-primary flex items-center gap-4 p-6 ${classNames(className)}`}
+    className={classNames(
+      'Header',
+      'bg-blue-primary',
+      'flex',
+      'items-center',
+      'gap-4',
+      'p-6',
+      className
+    )}
     {...props}
   >
     <div className="Header-logoContainer">

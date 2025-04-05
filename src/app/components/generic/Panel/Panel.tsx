@@ -17,7 +17,14 @@ export const Panel: React.FC<PanelProps> = ({
   const Tag = tag ? tag : 'div'
   return (
     <Tag
-      className={`Panel bg-white p-6 border-2 border-gray-200 ${classNames(className)}`}
+      className={classNames(
+        'Panel',
+        'bg-white',
+        'p-6',
+        'border-2',
+        'border-gray-200',
+        className
+      )}
       {...props}
     >
       {children}

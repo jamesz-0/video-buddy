@@ -30,7 +30,7 @@ export const AgendaTodayTable: React.FC<AgendaTodayTableProps> = ({
   className,
   agendaTodayTableData,
 }) => (
-  <div className={`${classNames('AgentToday', className)}`}>
+  <div className={`${classNames('AgentTodayTable', className)}`}>
     <div className="table border-spacing-x-0 border-spacing-y-[16px] w-full">
       {agendaTodayTableData.meetings.map((meetingItem) => {
         return (

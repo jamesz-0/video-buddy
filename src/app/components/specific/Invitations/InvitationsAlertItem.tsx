@@ -1,18 +1,18 @@
 import { RenderProp } from 'app/utils'
 import { IconText } from 'app/components/generic/IconText'
 
-export interface InvitationAlertItemProps {
+export interface InvitationsAlertItemProps {
   renderAvatar: RenderProp
   renderText: RenderProp
   renderButton: RenderProp
 }
 
-export const InvitationAlertItem: React.FC<InvitationAlertItemProps> = ({
+export const InvitationsAlertItem: React.FC<InvitationsAlertItemProps> = ({
   renderAvatar,
   renderText,
   renderButton,
 }) => (
-  <div className="InvitationAlertItem flex items-center">
+  <div className="InvitationsAlertItem flex items-center">
     <IconText
       className="flex-1 mr-4"
       renderIcon={renderAvatar}

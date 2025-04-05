@@ -12,7 +12,7 @@ export type DotProps = React.DetailedHTMLProps<
 export const Dot: React.FC<DotProps> = ({ className, ...props }) => {
   return (
     <div
-      className={`Dot rounded-full ${classNames(className)}`}
+      className={classNames('Dot', 'rounded-full', className)}
       {...props}
     ></div>
   )

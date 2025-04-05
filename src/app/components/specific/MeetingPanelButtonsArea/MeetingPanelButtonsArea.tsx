@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import classNames from 'classnames'
 import { PanelButton } from 'app/components/generic/PanelButton'
 import { IconText } from 'app/components/generic/IconText'
 import { Dot } from 'app/components/generic/Dot'
@@ -25,7 +26,12 @@ export const MeetingPanelButtonsArea: React.FC<MeetingPanelButtonsArea> = ({
 }) => {
   return (
     <div
-      className={`grid grid-rows-[1fr_1fr_1fr] gap-4 ${className}`}
+      className={classNames(
+        'grid',
+        'grid-rows-[1fr_1fr_1fr]',
+        'gap-4',
+        className
+      )}
       {...props}
     >
       <PanelButton

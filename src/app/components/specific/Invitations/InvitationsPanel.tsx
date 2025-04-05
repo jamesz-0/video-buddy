@@ -4,10 +4,8 @@ import React from 'react'
 import classNames from 'classnames'
 import { PropsWithClassName } from 'app/utils/index'
 import { Panel, PanelProps } from 'app/components/generic/Panel'
-import {
-  InvitationsList,
-  InvitationsDataObj,
-} from 'app/components/specific/Invitations/InvitationsList'
+import { InvitationsList } from 'app/components/specific/Invitations/InvitationsList'
+import { InvitationsDataObj } from '.'
 
 export interface InvitationsPanelProps extends PanelProps, PropsWithClassName {
   invitationsData: InvitationsDataObj

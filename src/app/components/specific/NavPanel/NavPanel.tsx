@@ -32,7 +32,15 @@ export const NavPanel: React.FC<NavPanelProps> = ({
 }) => {
   return (
     <Panel
-      className={`NavPanel min-w-[240px] px-0 flex flex-col justify-between ${className}`}
+      className={classNames(
+        'NavPanel',
+        'min-w-[240px]',
+        'px-0',
+        'flex',
+        'flex-col',
+        'justify-between',
+        className
+      )}
       {...props}
     >
       <ul className="Nav">

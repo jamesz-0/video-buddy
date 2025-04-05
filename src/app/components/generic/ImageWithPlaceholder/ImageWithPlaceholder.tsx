@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { PropsWithClassName } from 'app/utils'
 import { Dot } from 'app/components/generic/Dot'
+import classNames from 'classnames'
 
 export interface ImageWithPlaceholderProps extends PropsWithClassName {
   size: number
@@ -16,13 +17,13 @@ export const ImageWithPlaceholder: React.FC<ImageWithPlaceholderProps> = ({
 }) => {
   return src && alt ? (
     <Image
-      className={`rounded-full ${className}`}
+      className={classNames('rounded-full', className)}
       src={src}
       width={size}
       height={size}
       alt={alt}
     ></Image>
   ) : (
-    <Dot className={`bg-gray-200 ${className}`} />
+    <Dot className={classNames('bg-gray-200', className)} />
   )
 }
